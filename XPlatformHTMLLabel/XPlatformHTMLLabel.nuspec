@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>CYINT.XPlatformHTMLLabel</id>
-    <version>0.0.2-alpha</version>
+    <version>0.0.3-alpha</version>
     <title>XPlatformHTMLLabel</title>
     <authors>CYINT Technologies</authors>
     <owners>CYINT Technologies</owners>
@@ -14,9 +14,9 @@
   </metadata>
   <files>
         <!-- Android reference assemblies -->
-        <file src="..\AndroidHtmlLabel\bin\Release\AndroidHtmlLabel.dll" target="lib\monoandroid\AndroidHtmlLabel.dll" />
+        <file src="..\AndroidHTMLLabel\bin\Release\AndroidHTMLLabel.dll" target="lib\monoandroid\AndroidHTMLLabel.dll" />
   
         <!-- iOS reference assemblies -->
-        <file src="..\iOSHtmlLabel\bin\Release\iOSHtmlLabel.dll" target="lib\XamariniOS\iOSHtmlLabel.dll" />
+        <file src="..\iOSHTMLLabel\bin\Release\iOSHTMLLabel.dll" target="lib\XamariniOS\iOSHTMLLabel.dll" />
   </files>
 </package>

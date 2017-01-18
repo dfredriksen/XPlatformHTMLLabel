@@ -5,7 +5,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using CYINT.XPlatformHTMLLabel;
 
-[assembly: ExportRenderer(typeof(CYINT.XPlatformHTMLLabel.HtmlLabel), typeof(AndroidHtmlLabelRenderer))]
+[assembly: ExportRenderer(typeof(HtmlLabel), typeof(AndroidHtmlLabelRenderer))]
 
 namespace CYINT.XPlatformHTMLLabel
 {
