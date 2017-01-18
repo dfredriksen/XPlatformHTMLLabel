@@ -5,6 +5,21 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPlatformHTMLLabel", "XPlatformHTMLLabel\XPlatformHTMLLabel.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidHtmlLabelRendererImplementation", "AndroidHTMLLabel\AndroidHtmlLabelRendererImplementation.csproj", "{71E7FA9F-7E1A-4D75-B080-6A2C5652FACE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{67F9D3A8-F71E-4428-913F-C37AE82CDB24} = {67F9D3A8-F71E-4428-913F-C37AE82CDB24}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E9D51AB9-9CC1-455D-9F99-E30475B886EB}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSHtmlLabelRendererImplementation", "iOSHTMLLabel\iOSHtmlLabelRendererImplementation.csproj", "{02751E1B-4EF5-4471-B5BA-C9FD22412BC8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{67F9D3A8-F71E-4428-913F-C37AE82CDB24} = {67F9D3A8-F71E-4428-913F-C37AE82CDB24}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +30,14 @@ Global
 		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71E7FA9F-7E1A-4D75-B080-6A2C5652FACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71E7FA9F-7E1A-4D75-B080-6A2C5652FACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71E7FA9F-7E1A-4D75-B080-6A2C5652FACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71E7FA9F-7E1A-4D75-B080-6A2C5652FACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02751E1B-4EF5-4471-B5BA-C9FD22412BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02751E1B-4EF5-4471-B5BA-C9FD22412BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02751E1B-4EF5-4471-B5BA-C9FD22412BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02751E1B-4EF5-4471-B5BA-C9FD22412BC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
