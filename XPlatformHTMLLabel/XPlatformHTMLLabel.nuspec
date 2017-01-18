@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CYINT.XPlatformHTMLLabel</id>
+    <version>0.0.1-alpha</version>
+    <title>XPlatformHTMLLabel</title>
+    <authors>CYINT Technologies</authors>
+    <owners>CYINT Technologies</owners>
+    <projectUrl>https://www.github.com/dfredriksen/XPlatformHTMLLabel</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Xamarin Portable Class Library (PCL) and set of implementations for a cross platform HTML label.</description>
+    <releaseNotes>Alpha release.</releaseNotes>
+    <tags>Xamarin HTML html Label HtmlLabel Android iOS UWP</tags>
+  </metadata>
+  <files>
+        <!-- Android reference assemblies -->
+        <file src="..\AndroidHtmlLabel\bin\Release\AndroidHtmlLabel.dll" target="lib\monoandroid\AndroidHtmlLabel.dll" />
+  
+        <!-- iOS reference assemblies -->
+        <file src="..\iOSHtmlLabel\bin\Release\iOSHtmlLabel.dll" target="lib\XamariniOS\iOSHtmlLabel.dll" />
+  </files>
+</package>
