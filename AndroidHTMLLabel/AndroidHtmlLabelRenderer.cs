@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System;
 using Android.Text;
 using Android.Widget;
 using Xamarin.Forms;
@@ -30,19 +31,12 @@ namespace CYINT.XPlatformHTMLLabel
         
         //Disable deprecation warnings
         #pragma warning disable 612, 618
-        protected SpannedString FromHtml(string html)
+        protected ISpanned FromHtml(String strHtml)
         {
-            SpannedString result;
             if (Android.OS.Build.VERSION.SdkInt >= Android.OS.Build.VERSION_CODES.N)
-            {
-                result = (SpannedString)Html.FromHtml(html,Html.FromHtmlModeLegacy);
-            }
-            else
-            {
-                result = (SpannedString)Html.FromHtml(html);
-            }
+                return Html.FromHtml(strHtml,Html.FromHtmlModeLegacy);
 
-            return result;
+            return Html.FromHtml(strHtml);
         }
     }
 }
