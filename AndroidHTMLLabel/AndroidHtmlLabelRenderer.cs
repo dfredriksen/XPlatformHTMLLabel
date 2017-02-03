@@ -16,7 +16,7 @@ namespace CYINT.XPlatformHTMLLabel
         {
             base.OnElementChanged(e);
 
-            Control?.SetText(FromHtml(Element.Text), TextView.BufferType.Spannable);
+            Control?.SetText(FromHtml(Element.Text ?? string.Empty), TextView.BufferType.Spannable);
         }
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -25,7 +25,7 @@ namespace CYINT.XPlatformHTMLLabel
 
             if (e.PropertyName == Label.TextProperty.PropertyName)
             {
-                Control?.SetText(FromHtml(Element.Text), TextView.BufferType.Spannable);
+                Control?.SetText(FromHtml(Element.Text ?? string.Empty), TextView.BufferType.Spannable);
             }
         }
         
